@@ -17,6 +17,8 @@
 		D76A362528B359B300D5FA26 /* Calulator_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362428B359B300D5FA26 /* Calulator_TCATests.swift */; };
 		D76A362F28B359B300D5FA26 /* Calulator_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362E28B359B300D5FA26 /* Calulator_TCAUITests.swift */; };
 		D76A363128B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A363028B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift */; };
+		D76B2EE028E23BD70034F6B6 /* NumberFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B2EDF28E23BD70034F6B6 /* NumberFieldView.swift */; };
+		D76B2EE228E23DA70034F6B6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B2EE128E23DA70034F6B6 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		D76A362A28B359B300D5FA26 /* Calulator-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calulator-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76A362E28B359B300D5FA26 /* Calulator_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAUITests.swift; sourceTree = "<group>"; };
 		D76A363028B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D76B2EDF28E23BD70034F6B6 /* NumberFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldView.swift; sourceTree = "<group>"; };
+		D76B2EE128E23DA70034F6B6 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				D767AC9728E1829D004F6745 /* CalculatorView.swift */,
 				D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */,
 				D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */,
+				D76B2EDF28E23BD70034F6B6 /* NumberFieldView.swift */,
+				D76B2EE128E23DA70034F6B6 /* ButtonView.swift */,
 				D76A361728B359B300D5FA26 /* Assets.xcassets */,
 				D76A361928B359B300D5FA26 /* Preview Content */,
 			);
@@ -272,9 +278,11 @@
 			files = (
 				D76A361628B359B000D5FA26 /* ContentView.swift in Sources */,
 				D767AC9A28E183C3004F6745 /* CalculatorButtonType.swift in Sources */,
+				D76B2EE028E23BD70034F6B6 /* NumberFieldView.swift in Sources */,
 				D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */,
 				D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */,
 				D76A361428B359B000D5FA26 /* Calulator_TCAApp.swift in Sources */,
+				D76B2EE228E23DA70034F6B6 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,34 +26,20 @@ struct CalculatorView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                HStack {
-                    Spacer()
-                    Text(value)
-                        .foregroundColor(.white)
-                        .bold()
-                        .font(.system(size: 100))
-                }
-                .padding()
+                NumberFieldView(value: $value)
+                    .padding()
                 
                 ForEach(buttons, id: \.self) { rows in
                     HStack(spacing: 12) {
                         ForEach(rows) { item in
-                            Button {
-                                self.buttonTapped(button: item)
-                            } label: {
-                                Text(item.rawValue)
-                                    .font(.system(size: 32))
-                                    .frame(width: self.getButtonWidth(for: item), height: self.getButtonHeight())
-                                    .background(item.backgroundColor)
-                                    .foregroundColor(Color.white)
-                                    .cornerRadius(self.getButtonHeight() / 2)
+                            ButtonView(calculatorButtonType: item) { element in
+                                self.buttonTapped(button: element)
                             }
                         }
                     }
                     .padding(.bottom, 3)
                 }
             }
-            
         }
     }
     
@@ -109,17 +95,6 @@ struct CalculatorView: View {
                 value = "\(value)\(number)"
             }
         }
-    }
-    
-    private func getButtonWidth(for button: CalculatorButtonType) -> CGFloat {
-        if button == .zero {
-            return (UIScreen.main.bounds.width - 5.0 * 12.0) / 4 * 2
-        }
-        return (UIScreen.main.bounds.width - 5.0 * 12.0) / 4
-    }
-    
-    private func getButtonHeight() -> CGFloat {
-        (UIScreen.main.bounds.width - 5.0 * 12.0) / 4
     }
 }
 
