@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9728E1829D004F6745 /* CalculatorView.swift */; };
+		D767AC9A28E183C3004F6745 /* CalculatorButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */; };
+		D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */; };
 		D76A361428B359B000D5FA26 /* Calulator_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */; };
 		D76A361628B359B000D5FA26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A361528B359B000D5FA26 /* ContentView.swift */; };
 		D76A361828B359B300D5FA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76A361728B359B300D5FA26 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D767AC9728E1829D004F6745 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonType.swift; sourceTree = "<group>"; };
+		D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorOperation.swift; sourceTree = "<group>"; };
 		D76A361028B359B000D5FA26 /* Calulator-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calulator-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAApp.swift; sourceTree = "<group>"; };
 		D76A361528B359B000D5FA26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */,
 				D76A361528B359B000D5FA26 /* ContentView.swift */,
+				D767AC9728E1829D004F6745 /* CalculatorView.swift */,
+				D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */,
+				D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */,
 				D76A361728B359B300D5FA26 /* Assets.xcassets */,
 				D76A361928B359B300D5FA26 /* Preview Content */,
 			);
@@ -143,6 +152,8 @@
 			dependencies = (
 			);
 			name = "Calulator-TCA";
+			packageProductDependencies = (
+			);
 			productName = "Calulator-TCA";
 			productReference = D76A361028B359B000D5FA26 /* Calulator-TCA.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,8 @@
 				Base,
 			);
 			mainGroup = D76A360728B359B000D5FA26;
+			packageReferences = (
+			);
 			productRefGroup = D76A361128B359B000D5FA26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76A361628B359B000D5FA26 /* ContentView.swift in Sources */,
+				D767AC9A28E183C3004F6745 /* CalculatorButtonType.swift in Sources */,
+				D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */,
+				D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */,
 				D76A361428B359B000D5FA26 /* Calulator_TCAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +471,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
