@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NumberFieldView: View {
     
-    @Binding var value: String
+    var value: String
     
     var body: some View {
         HStack {
@@ -24,6 +24,6 @@ struct NumberFieldView: View {
 
 struct NumberFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        NumberFieldView(value: .constant("0"))
+        NumberFieldView(value: "0")
     }
 }

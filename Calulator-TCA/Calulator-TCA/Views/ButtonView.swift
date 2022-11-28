@@ -12,7 +12,10 @@ struct ButtonView: View {
     private let action: (CalculatorButtonType) -> Void
     private let calculatorButtonType: CalculatorButtonType
     
-    init(calculatorButtonType: CalculatorButtonType, action: @escaping (CalculatorButtonType) -> Void) {
+    init(
+        calculatorButtonType: CalculatorButtonType,
+        action: @escaping (CalculatorButtonType) -> Void
+    ) {
         self.calculatorButtonType = calculatorButtonType
         self.action = action
     }
@@ -23,7 +26,10 @@ struct ButtonView: View {
         } label: {
             Text(calculatorButtonType.rawValue)
                 .font(.system(size: 32))
-                .frame(width: self.getButtonWidth(for: calculatorButtonType), height: self.getButtonHeight())
+                .frame(
+                    width: self.getButtonWidth(for: calculatorButtonType),
+                    height: self.getButtonHeight()
+                )
                 .background(calculatorButtonType.backgroundColor)
                 .foregroundColor(Color.white)
                 .cornerRadius(self.getButtonHeight() / 2)
