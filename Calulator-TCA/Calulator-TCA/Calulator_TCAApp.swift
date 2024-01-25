@@ -12,14 +12,11 @@ import ComposableArchitecture
 struct Calulator_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView(
-                store: Store(
-                    initialState: RootDomain.State(
-                        calculatorDomainState: CalculatorDomain.State()
-                    ),
-                    reducer: RootDomain()
-                )
-            )
+            CalculatorView(
+                store: StoreOf<CalculatorDomain>(initialState: CalculatorDomain.State()) {
+                    CalculatorDomain()
+                })
+            
         }
     }
 }

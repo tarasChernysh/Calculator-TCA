@@ -9,25 +9,18 @@ import SwiftUI
 
 struct ButtonView: View {
     
-    private let action: (CalculatorButtonType) -> Void
-    private let calculatorButtonType: CalculatorButtonType
-    
-    init(
-        calculatorButtonType: CalculatorButtonType,
-        action: @escaping (CalculatorButtonType) -> Void
-    ) {
-        self.calculatorButtonType = calculatorButtonType
-        self.action = action
-    }
+    let calculatorButtonType: CalculatorButtonType
+    let screenSize: CGSize
+    let action: () -> Void
     
     var body: some View {
         Button {
-            self.action(calculatorButtonType)
+            self.action()
         } label: {
             Text(calculatorButtonType.rawValue)
                 .font(.system(size: 32))
                 .frame(
-                    width: self.getButtonWidth(for: calculatorButtonType),
+                    width: self.getButtonWidth(),
                     height: self.getButtonHeight()
                 )
                 .background(calculatorButtonType.backgroundColor)
@@ -36,20 +29,20 @@ struct ButtonView: View {
         }
     }
     
-    private func getButtonWidth(for button: CalculatorButtonType) -> CGFloat {
-        if button == .zero {
-            return (UIScreen.main.bounds.width - 5.0 * 12.0) / 4 * 2
+    private func getButtonWidth() -> CGFloat {
+        if calculatorButtonType == .zero {
+            return (screenSize.width - 5.0 * 12.0) / 4 * 2
         }
-        return (UIScreen.main.bounds.width - 5.0 * 12.0) / 4
+        return (screenSize.width - 5.0 * 12.0) / 4
     }
     
     private func getButtonHeight() -> CGFloat {
-        (UIScreen.main.bounds.width - 5.0 * 12.0) / 4
+        (screenSize.width - 5.0 * 12.0) / 4
     }
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(calculatorButtonType: .five, action: { _ in })
+        ButtonView(calculatorButtonType: .five, screenSize: CGSize(width: 330, height: 700), action: { })
     }
 }
