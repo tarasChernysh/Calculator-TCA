@@ -7,19 +7,7 @@
 
 import Foundation
 
-protocol NumberConverterUseCase: Sendable {
-    func convertIfNeeded(curentValue: String, withNew value: String) -> String
-    func convertToInitialValue() -> String
-    func convertToNumberOrZero(currentValue: String) -> Double
-    func convertToDisplayableValue(currentValue: String) -> String
-    func convertToDisplayableValue(currentNumber: Double) -> String
-}
-
-struct NumberConverterService {}
-
-// MARK: - NumberConverterUseCase
-
-extension NumberConverterService: NumberConverterUseCase {
+struct NumberConverterService {
     
     func convertIfNeeded(curentValue: String, withNew value: String) -> String {
         
