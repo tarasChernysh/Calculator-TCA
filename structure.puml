@@ -1,0 +1,61 @@
+@startuml
+
+title Main logic
+
+skinparam sequenceMessageAlign center
+skinparam responseMessageBelowArrow true
+skinparam BoxPadding 20
+
+box "Presentation layer" #LightBlue
+actor User as user #black
+boundary CalculatorDomain as domain #yellow
+end box
+
+box "Business layer" #D1C9DE
+control NumberConverterService as converter #blue
+control CalculatorService as service #pink
+end box
+
+user -> domain: enter text
+activate domain #yellow
+
+domain -> converter: request to convert text to decimal
+activate converter #blue
+note right
+there are should be a **number** inside a text
+end note
+
+converter -> converter: perform converting
+
+alt successful converting
+  converter -> service: give number to calculate operation
+  activate service #pink
+
+  service -> service: perform calculating
+
+  alt successful calculating
+    service --> domain: return **result**
+    domain -[#green]-> user: display **result**
+
+  else failure
+    service --> domain: return zero
+    domain -[#red]-> user: display zero
+  end
+  deactivate service
+
+else invalid text
+  converter --> domain
+  note right
+  text won't be able to convert to decimal
+  end note
+  deactivate converter
+  domain -[#red]-> user: return zero
+  deactivate domain
+end
+
+
+
+note right of service #orange: perform main \ncalculator operation
+/ note right of converter #orange: converting input text to decimal
+/ note right of domain #orange: manage logic and has certain state
+@enduml
