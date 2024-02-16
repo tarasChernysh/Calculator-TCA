@@ -11,7 +11,7 @@ actor User as user #black
 boundary CalculatorDomain as domain #yellow
 end box
 
-box "Application layer" #D1C9DE
+box "Business layer" #D1C9DE
 control NumberConverterService as converter #blue
 control CalculatorService as service #pink
 end box
