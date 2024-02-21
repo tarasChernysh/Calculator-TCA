@@ -8,12 +8,11 @@
 import Foundation
 
 extension NumberFormatter {
-
-    static let calculatorFormatter: NumberFormatter = {
-       let formatter = NumberFormatter()
-        formatter.maximumFractionDigits = 2
-        formatter.numberStyle = .decimal
-        formatter.roundingMode = .halfUp
-        return formatter
-    }()
+	static let calculatorFormatter: NumberFormatter = {
+		let formatter = NumberFormatter()
+		formatter.maximumFractionDigits = 2
+		formatter.numberStyle = .decimal
+		formatter.roundingMode = .halfUp
+		return formatter
+	}()
 }

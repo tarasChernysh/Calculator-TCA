@@ -8,7 +8,7 @@
 import Foundation
 
 extension FloatingPoint {
-    var isInteger: Bool {
-        truncatingRemainder(dividingBy: 1) == 0
-    }
+	var isInteger: Bool {
+		truncatingRemainder(dividingBy: 1) == 0
+	}
 }
