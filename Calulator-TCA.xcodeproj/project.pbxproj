@@ -13,12 +13,12 @@
 		D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9728E1829D004F6745 /* CalculatorView.swift */; };
 		D767AC9A28E183C3004F6745 /* CalculatorButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */; };
 		D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */; };
-		D76A361428B359B000D5FA26 /* Calulator_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */; };
+		D76A361428B359B000D5FA26 /* CalulatorTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A361328B359B000D5FA26 /* CalulatorTCAApp.swift */; };
 		D76A361828B359B300D5FA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76A361728B359B300D5FA26 /* Assets.xcassets */; };
 		D76A361B28B359B300D5FA26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76A361A28B359B300D5FA26 /* Preview Assets.xcassets */; };
-		D76A362528B359B300D5FA26 /* Calulator_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362428B359B300D5FA26 /* Calulator_TCATests.swift */; };
-		D76A362F28B359B300D5FA26 /* Calulator_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362E28B359B300D5FA26 /* Calulator_TCAUITests.swift */; };
-		D76A363128B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A363028B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift */; };
+		D76A362528B359B300D5FA26 /* CalulatorTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362428B359B300D5FA26 /* CalulatorTCATests.swift */; };
+		D76A362F28B359B300D5FA26 /* CalulatorTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A362E28B359B300D5FA26 /* CalulatorTCAUITests.swift */; };
+		D76A363128B359B300D5FA26 /* CalulatorTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A363028B359B300D5FA26 /* CalulatorTCAUITestsLaunchTests.swift */; };
 		D76B2EE028E23BD70034F6B6 /* NumberFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B2EDF28E23BD70034F6B6 /* NumberFieldView.swift */; };
 		D76B2EE228E23DA70034F6B6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B2EE128E23DA70034F6B6 /* ButtonView.swift */; };
 		D76B53562933FE8300DE2AE5 /* CalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B53552933FE8300DE2AE5 /* CalculatorService.swift */; };
@@ -52,14 +52,14 @@
 		D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonType.swift; sourceTree = "<group>"; };
 		D767AC9B28E1AEF2004F6745 /* CalculatorOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorOperation.swift; sourceTree = "<group>"; };
 		D76A361028B359B000D5FA26 /* Calulator-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calulator-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAApp.swift; sourceTree = "<group>"; };
+		D76A361328B359B000D5FA26 /* CalulatorTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorTCAApp.swift; sourceTree = "<group>"; };
 		D76A361728B359B300D5FA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D76A361A28B359B300D5FA26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D76A362028B359B300D5FA26 /* Calulator-TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calulator-TCATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D76A362428B359B300D5FA26 /* Calulator_TCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCATests.swift; sourceTree = "<group>"; };
+		D76A362428B359B300D5FA26 /* CalulatorTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorTCATests.swift; sourceTree = "<group>"; };
 		D76A362A28B359B300D5FA26 /* Calulator-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calulator-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D76A362E28B359B300D5FA26 /* Calulator_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAUITests.swift; sourceTree = "<group>"; };
-		D76A363028B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calulator_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D76A362E28B359B300D5FA26 /* CalulatorTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorTCAUITests.swift; sourceTree = "<group>"; };
+		D76A363028B359B300D5FA26 /* CalulatorTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalulatorTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D76B2EDF28E23BD70034F6B6 /* NumberFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldView.swift; sourceTree = "<group>"; };
 		D76B2EE128E23DA70034F6B6 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D76B53552933FE8300DE2AE5 /* CalculatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorService.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				D76B53582933FF4600DE2AE5 /* Views */,
 				D76B53572933FF2100DE2AE5 /* Models */,
 				D76B53542933FE6400DE2AE5 /* Services */,
-				D76A361328B359B000D5FA26 /* Calulator_TCAApp.swift */,
+				D76A361328B359B000D5FA26 /* CalulatorTCAApp.swift */,
 				D76A361728B359B300D5FA26 /* Assets.xcassets */,
 				D76A361928B359B300D5FA26 /* Preview Content */,
 			);
@@ -149,7 +149,7 @@
 		D76A362328B359B300D5FA26 /* Calulator-TCATests */ = {
 			isa = PBXGroup;
 			children = (
-				D76A362428B359B300D5FA26 /* Calulator_TCATests.swift */,
+				D76A362428B359B300D5FA26 /* CalulatorTCATests.swift */,
 				D761957529366A050065C18D /* CalculatorServiceTests.swift */,
 			);
 			path = "Calulator-TCATests";
@@ -158,8 +158,8 @@
 		D76A362D28B359B300D5FA26 /* Calulator-TCAUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D76A362E28B359B300D5FA26 /* Calulator_TCAUITests.swift */,
-				D76A363028B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift */,
+				D76A362E28B359B300D5FA26 /* CalulatorTCAUITests.swift */,
+				D76A363028B359B300D5FA26 /* CalulatorTCAUITestsLaunchTests.swift */,
 			);
 			path = "Calulator-TCAUITests";
 			sourceTree = "<group>";
@@ -212,6 +212,7 @@
 				D76A360C28B359B000D5FA26 /* Sources */,
 				D76A360D28B359B000D5FA26 /* Frameworks */,
 				D76A360E28B359B000D5FA26 /* Resources */,
+				3A5AA4702B85F73C00F7DD28 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -333,6 +334,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A5AA4702B85F73C00F7DD28 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D76A360C28B359B000D5FA26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -343,7 +366,7 @@
 				D76B2EE028E23BD70034F6B6 /* NumberFieldView.swift in Sources */,
 				D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */,
 				D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */,
-				D76A361428B359B000D5FA26 /* Calulator_TCAApp.swift in Sources */,
+				D76A361428B359B000D5FA26 /* CalulatorTCAApp.swift in Sources */,
 				D76B2EE228E23DA70034F6B6 /* ButtonView.swift in Sources */,
 				D76B535A2934022B00DE2AE5 /* NumberConverterService.swift in Sources */,
 				D76B53692934345300DE2AE5 /* RootView.swift in Sources */,
@@ -357,7 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76A362528B359B300D5FA26 /* Calulator_TCATests.swift in Sources */,
+				D76A362528B359B300D5FA26 /* CalulatorTCATests.swift in Sources */,
 				D761957629366A050065C18D /* CalculatorServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,8 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76A362F28B359B300D5FA26 /* Calulator_TCAUITests.swift in Sources */,
-				D76A363128B359B300D5FA26 /* Calulator_TCAUITestsLaunchTests.swift in Sources */,
+				D76A362F28B359B300D5FA26 /* CalulatorTCAUITests.swift in Sources */,
+				D76A363128B359B300D5FA26 /* CalulatorTCAUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

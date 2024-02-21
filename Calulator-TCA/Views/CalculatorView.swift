@@ -9,12 +9,12 @@ import SwiftUI
 import ComposableArchitecture
 
 struct CalculatorDomain: Reducer {
-    
+
     struct State: Equatable {
         var runningNumber: Double = 0
         var displayedText = "0"
         var operation: CalculatorOperation = .unspecified
-        
+
         let buttons: [[CalculatorButtonType]] = [
             [.clear, .negative, .percent, .divide],
             [.seven, .eight, .nine, .multiply],
@@ -23,15 +23,14 @@ struct CalculatorDomain: Reducer {
             [.zero, .decimal, .equal]
         ]
     }
-    
+
     enum Action: Equatable {
         case tapped(CalculatorButtonType)
     }
-    
+
     @Dependency(\.calculatorService) private var calculatorUseCase
     @Dependency(\.convertorService) private var converterService
-    
-    
+
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
@@ -43,52 +42,52 @@ struct CalculatorDomain: Reducer {
                     if buttonType != .equal {
                         state.displayedText = converterService.convertToInitialValue()
                     }
-                    
+
                     return .none
-                    
+
                 case .negative:
                     let number = converterService.convertToNumberOrZero(currentValue: state.displayedText)
                     let negativeNumber = calculatorUseCase.makeNegative(from: number)
                     state.displayedText = converterService.convertToDisplayableValue(currentNumber: negativeNumber)
                     return .none
-                    
+
                 case .percent:
                     let number = converterService.convertToNumberOrZero(currentValue: state.displayedText)
                     let persentNumber = calculatorUseCase.getPercent(from: number)
                     state.displayedText = converterService.convertToDisplayableValue(currentNumber: persentNumber)
                     return .none
-                    
+
                 case .equal:
                     let number = converterService.convertToNumberOrZero(currentValue: state.displayedText)
                     var newNumber: Double?
                     switch state.operation {
                     case .add:
                         newNumber = calculatorUseCase.sum(operand1: number, operand2: state.runningNumber)
-                        
+
                     case .divide:
                         newNumber = calculatorUseCase.divideIfPossible(dividend: state.runningNumber, divisor: number)
-                        
+
                     case .multiply:
                         newNumber = calculatorUseCase.multiply(operand1: number, operand2: state.runningNumber)
-                        
+
                     case .substract:
                         newNumber = calculatorUseCase.substract(minuend: state.runningNumber, subtrahend: number)
-                        
+
                     case .unspecified:
                         break
                     }
-                    
+
                     guard let newNumber = newNumber else {
                         return .none
                     }
                     state.displayedText = converterService.convertToDisplayableValue(currentNumber: newNumber)
-                    
+
                     return .none
-                    
+
                 case .clear:
                     state.displayedText = converterService.convertToInitialValue()
                     return .none
-                    
+
                 default:
                     let value = converterService.convertIfNeeded(curentValue: state.displayedText, withNew: buttonType.rawValue)
                     state.displayedText = value
@@ -99,11 +98,10 @@ struct CalculatorDomain: Reducer {
     }
 }
 
-
 struct CalculatorView: View {
-    
+
     let store: StoreOf<CalculatorDomain>
-    
+
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
             GeometryReader { proxy in
@@ -113,7 +111,7 @@ struct CalculatorView: View {
                         Spacer()
                         NumberFieldView(value: viewStore.displayedText)
                             .padding()
-                        
+
                         ForEach(viewStore.buttons, id: \.self) { rows in
                             HStack(spacing: 12) {
                                 ForEach(rows) { item in

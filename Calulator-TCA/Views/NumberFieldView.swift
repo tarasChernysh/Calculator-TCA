@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct NumberFieldView: View {
-    
+
     var value: String
-    
+
     var body: some View {
         HStack {
             Spacer()

@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Calulator_TCAUITestsLaunchTests: XCTestCase {
+class CalulatorTCAUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

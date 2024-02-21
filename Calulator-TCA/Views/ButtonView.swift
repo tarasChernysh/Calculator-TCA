@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ButtonView: View {
-    
+
     let calculatorButtonType: CalculatorButtonType
     let screenSize: CGSize
     let action: () -> Void
-    
+
     var body: some View {
         Button {
             self.action()
@@ -28,14 +28,14 @@ struct ButtonView: View {
                 .cornerRadius(self.getButtonHeight() / 2)
         }
     }
-    
+
     private func getButtonWidth() -> CGFloat {
         if calculatorButtonType == .zero {
             return (screenSize.width - 5.0 * 12.0) / 4 * 2
         }
         return (screenSize.width - 5.0 * 12.0) / 4
     }
-    
+
     private func getButtonHeight() -> CGFloat {
         (screenSize.width - 5.0 * 12.0) / 4
     }

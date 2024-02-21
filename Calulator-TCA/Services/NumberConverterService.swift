@@ -8,9 +8,9 @@
 import Foundation
 
 struct NumberConverterService {
-    
+
     func convertIfNeeded(curentValue: String, withNew value: String) -> String {
-        
+
         var valueToDisplay = ""
         let number = convertToNumberOrZero(currentValue: curentValue)
         let innitialValue = convertToInitialValue()
@@ -28,21 +28,21 @@ struct NumberConverterService {
         } else {
             valueToDisplay = "\(curentValue)\(value)"
         }
-        
+
         return valueToDisplay
     }
-    
+
     func convertToInitialValue() -> String { convertToDisplayableValue(currentValue: "0") }
-    
+
     func convertToNumberOrZero(currentValue: String) -> Double {
         NumberFormatter.calculatorFormatter.number(from: currentValue)?.doubleValue ?? 0
     }
-    
+
     func convertToDisplayableValue(currentValue: String) -> String {
         let number = convertToNumberOrZero(currentValue: currentValue)
         return NumberFormatter.calculatorFormatter.string(from: .init(value: number)) ?? convertToInitialValue()
     }
-    
+
     func convertToDisplayableValue(currentNumber: Double) -> String {
         NumberFormatter.calculatorFormatter.string(from: .init(value: currentNumber)) ?? convertToInitialValue()
     }

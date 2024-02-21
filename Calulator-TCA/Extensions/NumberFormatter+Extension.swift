@@ -8,7 +8,7 @@
 import Foundation
 
 extension NumberFormatter {
-    
+
     static let calculatorFormatter: NumberFormatter = {
        let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 2

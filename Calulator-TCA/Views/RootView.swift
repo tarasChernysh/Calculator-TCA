@@ -10,7 +10,7 @@ import ComposableArchitecture
 
 @Reducer
 struct RootDomain {
-    
+
     struct State: Equatable {
         var calculatorDomainState: CalculatorDomain.State?
     }
@@ -18,10 +18,10 @@ struct RootDomain {
     enum Action: Equatable {
         case main(CalculatorDomain.Action)
     }
-    
+
     var body: some ReducerOf<Self> {
-        Reduce { state, action in
-            return .none
+        Reduce { _, _ in
+            .none
         }
         .ifLet(\.calculatorDomainState, action: /Action.main) {
             CalculatorDomain()
@@ -30,18 +30,17 @@ struct RootDomain {
 }
 
 struct RootView: View {
-    
+
     let store: StoreOf<RootDomain>
-    
+
     var body: some View {
 
-        WithViewStore(store, observe: { $0 }) { viewStore in
+        WithViewStore(store, observe: { $0 }) { _ in
             CalculatorView(store: store.scope(state: { state in
                 state.calculatorDomainState ?? CalculatorDomain.State()
             }, action: { childAction in
                 RootDomain.Action.main(childAction)
             }))
-
         }
     }
 }

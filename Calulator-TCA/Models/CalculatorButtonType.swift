@@ -28,17 +28,17 @@ enum CalculatorButtonType: String, Identifiable, Equatable {
     case decimal = "."
     case percent = "%"
     case negative = "-/+"
-    
+
     var id: String { rawValue }
-    
+
     var backgroundColor: Color {
         switch self {
         case .add, .substract, .multiply, .divide, .equal:
             return .orange
-            
+
         case .clear, .negative, .percent:
             return Color(UIColor.lightGray)
-            
+
         default:
             return Color(UIColor.darkGray)
         }

@@ -27,7 +27,7 @@ extension DependencyValues {
         get { self[CalculatorService.self] }
         set { self[CalculatorService.self] = newValue }
     }
-    
+
     var convertorService: NumberConverterService {
         get { self[NumberConverterService.self] }
         set { self[NumberConverterService.self] = newValue }

@@ -13,21 +13,21 @@ enum CalculatorOperation {
     case multiply
     case substract
     case unspecified
-    
+
     init(buttonType: CalculatorButtonType) {
         switch buttonType {
         case .substract:
             self = .substract
-            
+
         case .multiply:
             self = .multiply
-            
+
         case .add:
             self = .add
-            
+
         case .divide:
             self = .divide
-            
+
         default:
             self = .unspecified
         }

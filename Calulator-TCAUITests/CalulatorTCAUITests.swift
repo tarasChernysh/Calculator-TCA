@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Calulator_TCAUITests: XCTestCase {
+class CalulatorTCAUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
