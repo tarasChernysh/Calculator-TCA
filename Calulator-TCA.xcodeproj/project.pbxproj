@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A2F96D92B6195C8006B2740 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3A2F96D82B6195C8006B2740 /* ComposableArchitecture */; };
 		3A2F96DC2B619889006B2740 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F96DB2B619889006B2740 /* Dependencies.swift */; };
+		3A702FF32B88E42A00C16ADE /* EnumIdentifiebleConformable in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FF22B88E42A00C16ADE /* EnumIdentifiebleConformable */; };
+		3A702FF52B88E42A00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FF42B88E42A00C16ADE /* EnumIdentifiebleConformableClient */; };
+		3A702FF82B88E46C00C16ADE /* EnumIdentifiebleConformable in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FF72B88E46C00C16ADE /* EnumIdentifiebleConformable */; };
+		3A702FFA2B88E46C00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FF92B88E46C00C16ADE /* EnumIdentifiebleConformableClient */; };
+		3A702FFD2B88E4EC00C16ADE /* EnumIdentifiebleConformable in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FFC2B88E4EC00C16ADE /* EnumIdentifiebleConformable */; };
+		3A702FFF2B88E4EC00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 3A702FFE2B88E4EC00C16ADE /* EnumIdentifiebleConformableClient */; };
 		D761957629366A050065C18D /* CalculatorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761957529366A050065C18D /* CalculatorServiceTests.swift */; };
 		D767AC9828E1829D004F6745 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9728E1829D004F6745 /* CalculatorView.swift */; };
 		D767AC9A28E183C3004F6745 /* CalculatorButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AC9928E183C3004F6745 /* CalculatorButtonType.swift */; };
@@ -74,6 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A702FFD2B88E4EC00C16ADE /* EnumIdentifiebleConformable in Frameworks */,
+				3A702FF82B88E46C00C16ADE /* EnumIdentifiebleConformable in Frameworks */,
+				3A702FFF2B88E4EC00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */,
+				3A702FFA2B88E46C00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */,
+				3A702FF52B88E42A00C16ADE /* EnumIdentifiebleConformableClient in Frameworks */,
+				3A702FF32B88E42A00C16ADE /* EnumIdentifiebleConformable in Frameworks */,
 				3A2F96D92B6195C8006B2740 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +234,12 @@
 			name = "Calulator-TCA";
 			packageProductDependencies = (
 				3A2F96D82B6195C8006B2740 /* ComposableArchitecture */,
+				3A702FF22B88E42A00C16ADE /* EnumIdentifiebleConformable */,
+				3A702FF42B88E42A00C16ADE /* EnumIdentifiebleConformableClient */,
+				3A702FF72B88E46C00C16ADE /* EnumIdentifiebleConformable */,
+				3A702FF92B88E46C00C16ADE /* EnumIdentifiebleConformableClient */,
+				3A702FFC2B88E4EC00C16ADE /* EnumIdentifiebleConformable */,
+				3A702FFE2B88E4EC00C16ADE /* EnumIdentifiebleConformableClient */,
 			);
 			productName = "Calulator-TCA";
 			productReference = D76A361028B359B000D5FA26 /* Calulator-TCA.app */;
@@ -297,6 +315,7 @@
 			mainGroup = D76A360728B359B000D5FA26;
 			packageReferences = (
 				3A2F96D72B6195C8006B2740 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "Calulator-TCA/Macros/EnumIdentifiebleConformable" */,
 			);
 			productRefGroup = D76A361128B359B000D5FA26 /* Products */;
 			projectDirPath = "";
@@ -720,6 +739,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "Calulator-TCA/Macros/EnumIdentifiebleConformable" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "Calulator-TCA/Macros/EnumIdentifiebleConformable";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		3A2F96D72B6195C8006B2740 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -736,6 +762,30 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A2F96D72B6195C8006B2740 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		3A702FF22B88E42A00C16ADE /* EnumIdentifiebleConformable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformable;
+		};
+		3A702FF42B88E42A00C16ADE /* EnumIdentifiebleConformableClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformableClient;
+		};
+		3A702FF72B88E46C00C16ADE /* EnumIdentifiebleConformable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformable;
+		};
+		3A702FF92B88E46C00C16ADE /* EnumIdentifiebleConformableClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformableClient;
+		};
+		3A702FFC2B88E4EC00C16ADE /* EnumIdentifiebleConformable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformable;
+		};
+		3A702FFE2B88E4EC00C16ADE /* EnumIdentifiebleConformableClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EnumIdentifiebleConformableClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
