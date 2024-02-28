@@ -32,6 +32,7 @@
 		D76B535F2934125300DE2AE5 /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B535E2934125300DE2AE5 /* NumberFormatter+Extension.swift */; };
 		D76B53692934345300DE2AE5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B53682934345300DE2AE5 /* RootView.swift */; };
 		D76B536B2934B28B00DE2AE5 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B536A2934B28B00DE2AE5 /* Float+Extension.swift */; };
+		D7F38C992B8F43F900C8CD9B /* SomeAnyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F38C982B8F43F900C8CD9B /* SomeAnyDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D76B535E2934125300DE2AE5 /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
 		D76B53682934345300DE2AE5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		D76B536A2934B28B00DE2AE5 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		D7F38C982B8F43F900C8CD9B /* SomeAnyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAnyDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3A2F96DB2B619889006B2740 /* Dependencies.swift */,
+				D7F38C982B8F43F900C8CD9B /* SomeAnyDemo.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				D767AC9C28E1AEF2004F6745 /* CalculatorOperation.swift in Sources */,
 				D76A361428B359B000D5FA26 /* CalulatorTCAApp.swift in Sources */,
 				D76B2EE228E23DA70034F6B6 /* ButtonView.swift in Sources */,
+				D7F38C992B8F43F900C8CD9B /* SomeAnyDemo.swift in Sources */,
 				D76B535A2934022B00DE2AE5 /* NumberConverterService.swift in Sources */,
 				D76B53692934345300DE2AE5 /* RootView.swift in Sources */,
 				D76B53562933FE8300DE2AE5 /* CalculatorService.swift in Sources */,
