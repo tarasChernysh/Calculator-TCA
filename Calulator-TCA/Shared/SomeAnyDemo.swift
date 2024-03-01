@@ -49,4 +49,16 @@ final class School {
 	}
 }
 
-class University {}
+class University {
+	func test() {
+		var animal: String?
+		guard let aa = animal else { return }
+	}
+}
+
+/*
+ Running SwiftFormat...
+ Reading config file at /Users/tchernysh/education/PDP/projects/Calculator-TCA/.swiftformat
+ SwiftFormat completed successfully.
+ Reformatted Calulator-TCA/Shared/SomeAnyDemo.swift with swiftformat stdin --stdinpath '{}'
+ */
