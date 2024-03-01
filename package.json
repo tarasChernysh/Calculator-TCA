@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "git-format-staged": "^3.1.1"
+  }
+}
