@@ -52,7 +52,6 @@ final class School {
 class University {
 	func test() {
 		var animal: String?
-
 		guard let aa = animal else { return }
 	}
 }
