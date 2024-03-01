@@ -48,16 +48,3 @@ final class School {
 		}
 	}
 }
-
-class University {
-    
-    var name: String?
-    
-	func test() {
-        
-		var animal: String?
-        
-        name = ""
-		guard let aa = animal else { return }
-	}
-}
