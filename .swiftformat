@@ -1,7 +1,9 @@
---allman false
+--allman true
 --indent tab
 --disable elseOnSameLine,semicolons
 --exclude Pods,Generated
 
 ### elseOnSameLine
 --guardelse next-line
+
+--rules redundantSelf
