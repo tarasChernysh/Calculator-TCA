@@ -280,9 +280,9 @@
 			buildPhases = (
 				2CE7077AA1CC0C93D133CF2E /* [CP] Check Pods Manifest.lock */,
 				D76A360C28B359B000D5FA26 /* Sources */,
+				3A5AA4702B85F73C00F7DD28 /* SwiftLint */,
 				D76A360D28B359B000D5FA26 /* Frameworks */,
 				D76A360E28B359B000D5FA26 /* Resources */,
-				3A5AA4702B85F73C00F7DD28 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -479,7 +479,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		CAC8BED9742653447693E424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

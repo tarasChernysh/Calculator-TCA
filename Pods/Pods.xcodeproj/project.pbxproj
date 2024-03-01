@@ -16,58 +16,82 @@
 			);
 			name = SwiftFormat;
 		};
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		49CDD32900AC2C101E5D09FDFD43AB2A /* Pods-Calulator-TCA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07972AD5A55C4184F89E8C12AE8D6FB6 /* Pods-Calulator-TCA-dummy.m */; };
+		0D1C50F91D31542C3222F230D79D2074 /* Pods-Calulator-TCA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C1E64DB427D37649CBF959CFE10EF7 /* Pods-Calulator-TCA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7CD3766A7488CCA407E533E86B4F39 /* Pods-Calulator-TCATests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 793EC4AEC234B8E4530838B36EFFE094 /* Pods-Calulator-TCATests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63423D7E9C67A6AF3AAD9786ACE4A730 /* Pods-Calulator-TCA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C1E64DB427D37649CBF959CFE10EF7 /* Pods-Calulator-TCA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C35DABB39AB5C5CF51752B6CA91ECF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		94C436530B7B5A5C910BD076CCDBCE7F /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2ED2518B462D8722FE8D3248FAD8FFC /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62FAAD7843880B15CC8BDAD5A98442A /* Pods-Calulator-TCATests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21BF687DA22572CF9A2BC2DA72A86F /* Pods-Calulator-TCATests-dummy.m */; };
-		B5C5C5CE8578939FF71C34C464BB277F /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3463DA5AB786A20BB5AB071E0AA9CF7 /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m */; };
 		C1FAEC3679041D6E99E61BFD656D19BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D034CFE4DD76788C0BF06226A81AC745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EEC6F3AFC50DE58E0864E2FBF2821B2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F07232C80D3C80C0B1F92773C9CB3B3A /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2ED2518B462D8722FE8D3248FAD8FFC /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFC986C9C8E47A6AA8FC7498A738A037 /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3463DA5AB786A20BB5AB071E0AA9CF7 /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m */; };
+		E9DF73D605056C7B570B403B9CD275E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F0E4C89FE26BFFEE4AB2F3D38851FA8D /* Pods-Calulator-TCA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07972AD5A55C4184F89E8C12AE8D6FB6 /* Pods-Calulator-TCA-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		69DFC1F83CEE3E0F90A591F911DB03A5 /* PBXContainerItemProxy */ = {
+		5576B3582814FB718818DBD3061201F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
 			remoteInfo = SwiftFormat;
 		};
-		AA5D29F9250DC32FE6F693E202C4A271 /* PBXContainerItemProxy */ = {
+		8EDFD6F78EFF73374034B4CD9A102FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		9CB4BA70CE618E8AA6D5E64F0408163B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
 			remoteInfo = SwiftFormat;
 		};
-		FEC14071466243C3D19437F6CBF52A8B /* PBXContainerItemProxy */ = {
+		B9A28A05370C83F3C804CC88EE1D0396 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 54651D9A77C4AF35D72D93DBDCCC226E;
 			remoteInfo = "Pods-Calulator-TCA";
 		};
+		D1298CB6545550BEA128F04DBA974E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07972AD5A55C4184F89E8C12AE8D6FB6 /* Pods-Calulator-TCA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calulator-TCA-dummy.m"; sourceTree = "<group>"; };
+		085F1E7EC2C800801564BAC6A1CCF8E0 /* SwiftFormat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.release.xcconfig; sourceTree = "<group>"; };
 		1F97E5AC879C9282C66527ADC058846C /* Pods-Calulator-TCA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calulator-TCA-acknowledgements.plist"; sourceTree = "<group>"; };
 		275DEEC06F334CD088BBB9266D7101A7 /* Pods-Calulator-TCA-Calulator-TCAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calulator-TCA-Calulator-TCAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B5810D5C227D57CF24E64C3880097BB /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		2E21BF687DA22572CF9A2BC2DA72A86F /* Pods-Calulator-TCATests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calulator-TCATests-dummy.m"; sourceTree = "<group>"; };
 		33ABF10EE39B18B876C8BA98F8E24819 /* Pods-Calulator-TCA-Calulator-TCAUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Calulator-TCA-Calulator-TCAUITests"; path = Pods_Calulator_TCA_Calulator_TCAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED89E454265CAA2D09E61794EB91446 /* Pods-Calulator-TCATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calulator-TCATests.debug.xcconfig"; sourceTree = "<group>"; };
 		47C1E64DB427D37649CBF959CFE10EF7 /* Pods-Calulator-TCA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calulator-TCA-umbrella.h"; sourceTree = "<group>"; };
 		49EC88F586B1ADFD80759D355E7324BE /* Pods-Calulator-TCA-Calulator-TCAUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calulator-TCA-Calulator-TCAUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4D8299B483C8EE960370494860D25DD3 /* Pods-Calulator-TCA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calulator-TCA-acknowledgements.markdown"; sourceTree = "<group>"; };
-		648D81C8150A30FFE785A0543F29A014 /* SwiftFormat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.release.xcconfig; sourceTree = "<group>"; };
+		57BDC9D734A1086E2EDC6B6D8E557FE1 /* SwiftFormat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.debug.xcconfig; sourceTree = "<group>"; };
 		6D177E723E947948465C674041993573 /* Pods-Calulator-TCATests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calulator-TCATests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7433EEFC25C53325F55475D5F53BF878 /* SwiftFormat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.debug.xcconfig; sourceTree = "<group>"; };
 		793EC4AEC234B8E4530838B36EFFE094 /* Pods-Calulator-TCATests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calulator-TCATests-umbrella.h"; sourceTree = "<group>"; };
 		8747216F83A21D0A56CFC6EB7B3806EA /* Pods-Calulator-TCATests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calulator-TCATests-Info.plist"; sourceTree = "<group>"; };
 		89D8B283EF8EAA1F88384E15AA4140EF /* Pods-Calulator-TCATests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calulator-TCATests.modulemap"; sourceTree = "<group>"; };
@@ -84,24 +108,17 @@
 		DDE40D2C6B902663E752A93AD3CF5F43 /* Pods-Calulator-TCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calulator-TCA.debug.xcconfig"; sourceTree = "<group>"; };
 		DF9241806FC7252FE06D96002BC0B53A /* Pods-Calulator-TCA-Calulator-TCAUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calulator-TCA-Calulator-TCAUITests.modulemap"; sourceTree = "<group>"; };
 		E3463DA5AB786A20BB5AB071E0AA9CF7 /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m"; sourceTree = "<group>"; };
+		ED482D20A3F2EF0BF6D78F3F998E5D3C /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		F2ED2518B462D8722FE8D3248FAD8FFC /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h"; sourceTree = "<group>"; };
 		FEED2953FE31778E55CC78F9871C3C28 /* Pods-Calulator-TCA-Calulator-TCAUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calulator-TCA-Calulator-TCAUITests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		52B0DE6D80D9A339FC91A10922999299 /* Frameworks */ = {
+		72E903163C1C8A706A166B16AD816EFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEC6F3AFC50DE58E0864E2FBF2821B2D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58E042B2E5ACC274EFE2D7E279283E62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D034CFE4DD76788C0BF06226A81AC745 /* Foundation.framework in Frameworks */,
+				8C35DABB39AB5C5CF51752B6CA91ECF7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +127,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FAEC3679041D6E99E61BFD656D19BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AB4A36D300B1CFA03C11A62971D09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DF73D605056C7B570B403B9CD275E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,13 +177,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		391A1CAC32304E55D86C62692A045D1E /* SwiftFormat */ = {
+		3CE74E18E214A3FE9C34446B045F0AD6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A8D95101B1D4FCD6178A65333A06533B /* Support Files */,
+				ED482D20A3F2EF0BF6D78F3F998E5D3C /* SwiftLint.debug.xcconfig */,
+				2B5810D5C227D57CF24E64C3880097BB /* SwiftLint.release.xcconfig */,
 			);
-			name = SwiftFormat;
-			path = SwiftFormat;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		4DDBE6707C958BE5A8A324CCEFC193EF /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				3CE74E18E214A3FE9C34446B045F0AD6 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -201,22 +236,32 @@
 			path = "Target Support Files/Pods-Calulator-TCATests";
 			sourceTree = "<group>";
 		};
-		9B4BE7EA6762889896D8B43A53BE1AF4 /* Pods */ = {
+		8A0BDFAE11F73EFB936005F32975AE64 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				391A1CAC32304E55D86C62692A045D1E /* SwiftFormat */,
+				C2ED518B232321B1FA183996AEBAC337 /* SwiftFormat */,
+				4DDBE6707C958BE5A8A324CCEFC193EF /* SwiftLint */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A8D95101B1D4FCD6178A65333A06533B /* Support Files */ = {
+		A69E3F1FF27C4A1CD2C303F40BF715E3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7433EEFC25C53325F55475D5F53BF878 /* SwiftFormat.debug.xcconfig */,
-				648D81C8150A30FFE785A0543F29A014 /* SwiftFormat.release.xcconfig */,
+				57BDC9D734A1086E2EDC6B6D8E557FE1 /* SwiftFormat.debug.xcconfig */,
+				085F1E7EC2C800801564BAC6A1CCF8E0 /* SwiftFormat.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftFormat";
+			sourceTree = "<group>";
+		};
+		C2ED518B232321B1FA183996AEBAC337 /* SwiftFormat */ = {
+			isa = PBXGroup;
+			children = (
+				A69E3F1FF27C4A1CD2C303F40BF715E3 /* Support Files */,
+			);
+			name = SwiftFormat;
+			path = SwiftFormat;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -224,7 +269,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9B4BE7EA6762889896D8B43A53BE1AF4 /* Pods */,
+				8A0BDFAE11F73EFB936005F32975AE64 /* Pods */,
 				3487A1CC8B3CB49AD9967EA47E907C14 /* Products */,
 				237F25785675A51FABF63F78953F5E3E /* Targets Support Files */,
 			);
@@ -249,19 +294,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		414AD5F128ECB245004A26D0CECC9940 /* Headers */ = {
+		CF513038457774A8386842D56CBF0C53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63423D7E9C67A6AF3AAD9786ACE4A730 /* Pods-Calulator-TCA-umbrella.h in Headers */,
+				94C436530B7B5A5C910BD076CCDBCE7F /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EE99849DEE4C0EA4F1F11076C1BA337 /* Headers */ = {
+		FAE6CFA1801CD347014B0803628C52C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F07232C80D3C80C0B1F92773C9CB3B3A /* Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h in Headers */,
+				0D1C50F91D31542C3222F230D79D2074 /* Pods-Calulator-TCA-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,17 +315,18 @@
 /* Begin PBXNativeTarget section */
 		54651D9A77C4AF35D72D93DBDCCC226E /* Pods-Calulator-TCA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77934A6C1642F2DA602B9541C00EBA33 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA" */;
+			buildConfigurationList = 58DAE8B842B5B6743CC1B249BCF01BA8 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA" */;
 			buildPhases = (
-				414AD5F128ECB245004A26D0CECC9940 /* Headers */,
-				DE57557F1857478FE92E2527351BB0DD /* Sources */,
-				58E042B2E5ACC274EFE2D7E279283E62 /* Frameworks */,
-				570C4B350AC58CB3360B9264085C36D9 /* Resources */,
+				FAE6CFA1801CD347014B0803628C52C4 /* Headers */,
+				1C1B7C6212E673FF40CBA7D32F048261 /* Sources */,
+				72E903163C1C8A706A166B16AD816EFF /* Frameworks */,
+				CE61704C1FC680C581A42358E7E409BD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00F9DA6DB105129006F18DBE7290F431 /* PBXTargetDependency */,
+				740EF4432EF34D0E5DDE33B5F620FB1B /* PBXTargetDependency */,
+				82705F11B578D719D5E696AE595DD71A /* PBXTargetDependency */,
 			);
 			name = "Pods-Calulator-TCA";
 			productName = Pods_Calulator_TCA;
@@ -289,17 +335,18 @@
 		};
 		CA7BB03145929D34CE7D2979876583D7 /* Pods-Calulator-TCA-Calulator-TCAUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97DE0D32890E24B99BA47A8310DEC8B6 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA-Calulator-TCAUITests" */;
+			buildConfigurationList = 9D5845FC4414ECEC6F22D22DE92FABE1 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA-Calulator-TCAUITests" */;
 			buildPhases = (
-				7EE99849DEE4C0EA4F1F11076C1BA337 /* Headers */,
-				3084A4C8E7CA36300AE9DF687DFB0F85 /* Sources */,
-				52B0DE6D80D9A339FC91A10922999299 /* Frameworks */,
-				5801E0754B3F3E2F92F5B2D52344B03A /* Resources */,
+				CF513038457774A8386842D56CBF0C53 /* Headers */,
+				B36CEE817AA54DB99648F6CAEB57A49D /* Sources */,
+				F7AB4A36D300B1CFA03C11A62971D09C /* Frameworks */,
+				85351C7144F86F004D324F3FF356E23D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81010553E6732F77E7B2196575352793 /* PBXTargetDependency */,
+				5A0BD8727BF5BFB0D6DCF9FC315FC08E /* PBXTargetDependency */,
+				B085A125217B2934B1E252C21D75429D /* PBXTargetDependency */,
 			);
 			name = "Pods-Calulator-TCA-Calulator-TCAUITests";
 			productName = Pods_Calulator_TCA_Calulator_TCAUITests;
@@ -318,7 +365,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2287C8C85D4DE4B205ABE7FA6AD22EC3 /* PBXTargetDependency */,
+				87B77E3E56826257BBF9B13D3DF24856 /* PBXTargetDependency */,
 			);
 			name = "Pods-Calulator-TCATests";
 			productName = Pods_Calulator_TCATests;
@@ -351,19 +398,13 @@
 				CA7BB03145929D34CE7D2979876583D7 /* Pods-Calulator-TCA-Calulator-TCAUITests */,
 				CF1320F5DA257531D52F778C3170E665 /* Pods-Calulator-TCATests */,
 				1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		570C4B350AC58CB3360B9264085C36D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5801E0754B3F3E2F92F5B2D52344B03A /* Resources */ = {
+		85351C7144F86F004D324F3FF356E23D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,9 +418,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE61704C1FC680C581A42358E7E409BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C1B7C6212E673FF40CBA7D32F048261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E4C89FE26BFFEE4AB2F3D38851FA8D /* Pods-Calulator-TCA-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F93FEE3037AAC9E140DB228FCC43593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,46 +444,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3084A4C8E7CA36300AE9DF687DFB0F85 /* Sources */ = {
+		B36CEE817AA54DB99648F6CAEB57A49D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C5C5CE8578939FF71C34C464BB277F /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE57557F1857478FE92E2527351BB0DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49CDD32900AC2C101E5D09FDFD43AB2A /* Pods-Calulator-TCA-dummy.m in Sources */,
+				CFC986C9C8E47A6AA8FC7498A738A037 /* Pods-Calulator-TCA-Calulator-TCAUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00F9DA6DB105129006F18DBE7290F431 /* PBXTargetDependency */ = {
+		5A0BD8727BF5BFB0D6DCF9FC315FC08E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftFormat;
 			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
-			targetProxy = 69DFC1F83CEE3E0F90A591F911DB03A5 /* PBXContainerItemProxy */;
+			targetProxy = 9CB4BA70CE618E8AA6D5E64F0408163B /* PBXContainerItemProxy */;
 		};
-		2287C8C85D4DE4B205ABE7FA6AD22EC3 /* PBXTargetDependency */ = {
+		740EF4432EF34D0E5DDE33B5F620FB1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftFormat;
+			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
+			targetProxy = 5576B3582814FB718818DBD3061201F1 /* PBXContainerItemProxy */;
+		};
+		82705F11B578D719D5E696AE595DD71A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = D1298CB6545550BEA128F04DBA974E68 /* PBXContainerItemProxy */;
+		};
+		87B77E3E56826257BBF9B13D3DF24856 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Calulator-TCA";
 			target = 54651D9A77C4AF35D72D93DBDCCC226E /* Pods-Calulator-TCA */;
-			targetProxy = FEC14071466243C3D19437F6CBF52A8B /* PBXContainerItemProxy */;
+			targetProxy = B9A28A05370C83F3C804CC88EE1D0396 /* PBXContainerItemProxy */;
 		};
-		81010553E6732F77E7B2196575352793 /* PBXTargetDependency */ = {
+		B085A125217B2934B1E252C21D75429D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftFormat;
-			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
-			targetProxy = AA5D29F9250DC32FE6F693E202C4A271 /* PBXContainerItemProxy */;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 8EDFD6F78EFF73374034B4CD9A102FCC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		26EA5A9600226D2B7D8D25152A304F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5810D5C227D57CF24E64C3880097BB /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,7 +570,7 @@
 		};
 		341FF2FB3C491D773434367650E7F940 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7433EEFC25C53325F55475D5F53BF878 /* SwiftFormat.debug.xcconfig */;
+			baseConfigurationReference = 57BDC9D734A1086E2EDC6B6D8E557FE1 /* SwiftFormat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,7 +585,7 @@
 			};
 			name = Debug;
 		};
-		625C9E449FD4FCE8753AB6FCC9F70771 /* Release */ = {
+		3A69986465D2A642D267CD3CDBDF1D02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 275DEEC06F334CD088BBB9266D7101A7 /* Pods-Calulator-TCA-Calulator-TCAUITests.release.xcconfig */;
 			buildSettings = {
@@ -544,6 +622,80 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		41AF7A557B72AFA97AF3A3B2FB8B367B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63D200A29C55677DCB2107E411BA81C /* Pods-Calulator-TCA-Calulator-TCAUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA-Calulator-TCAUITests/Pods-Calulator-TCA-Calulator-TCAUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA-Calulator-TCAUITests/Pods-Calulator-TCA-Calulator-TCAUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B27CCF332428A5459F23F2F61161CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE40D2C6B902663E752A93AD3CF5F43 /* Pods-Calulator-TCA.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		89A0EDF1E5DCAB66A68C59BF46527E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -620,84 +772,9 @@
 			};
 			name = Release;
 		};
-		91A0281D1FD86031946FD0922F9286BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C63D200A29C55677DCB2107E411BA81C /* Pods-Calulator-TCA-Calulator-TCAUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA-Calulator-TCAUITests/Pods-Calulator-TCA-Calulator-TCAUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA-Calulator-TCAUITests/Pods-Calulator-TCA-Calulator-TCAUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		98A73F9609586F7F80E8CBE03E603D51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F7ED4892BFE036FE1067C19C66ACAA /* Pods-Calulator-TCA.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E0D8F498909A462170D2F02A830F98DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 648D81C8150A30FFE785A0543F29A014 /* SwiftFormat.release.xcconfig */;
+			baseConfigurationReference = 085F1E7EC2C800801564BAC6A1CCF8E0 /* SwiftFormat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -713,40 +790,20 @@
 			};
 			name = Release;
 		};
-		EE0CC25526FAEACBF98E4EDCDF4807E7 /* Debug */ = {
+		E9E1A48A750B946DE9877594C6E735E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDE40D2C6B902663E752A93AD3CF5F43 /* Pods-Calulator-TCA.debug.xcconfig */;
+			baseConfigurationReference = ED482D20A3F2EF0BF6D78F3F998E5D3C /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -816,6 +873,44 @@
 			};
 			name = Debug;
 		};
+		F52952D956AB3F4145389B34095E4F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F7ED4892BFE036FE1067C19C66ACAA /* Pods-Calulator-TCA.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calulator-TCA/Pods-Calulator-TCA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -824,6 +919,15 @@
 			buildConfigurations = (
 				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
 				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DAE8B842B5B6743CC1B249BCF01BA8 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B27CCF332428A5459F23F2F61161CB7 /* Debug */,
+				F52952D956AB3F4145389B34095E4F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -837,20 +941,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77934A6C1642F2DA602B9541C00EBA33 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA" */ = {
+		9D5845FC4414ECEC6F22D22DE92FABE1 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA-Calulator-TCAUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE0CC25526FAEACBF98E4EDCDF4807E7 /* Debug */,
-				98A73F9609586F7F80E8CBE03E603D51 /* Release */,
+				41AF7A557B72AFA97AF3A3B2FB8B367B /* Debug */,
+				3A69986465D2A642D267CD3CDBDF1D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97DE0D32890E24B99BA47A8310DEC8B6 /* Build configuration list for PBXNativeTarget "Pods-Calulator-TCA-Calulator-TCAUITests" */ = {
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91A0281D1FD86031946FD0922F9286BE /* Debug */,
-				625C9E449FD4FCE8753AB6FCC9F70771 /* Release */,
+				E9E1A48A750B946DE9877594C6E735E4 /* Debug */,
+				26EA5A9600226D2B7D8D25152A304F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
