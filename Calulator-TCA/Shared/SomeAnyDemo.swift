@@ -54,6 +54,7 @@ class University {
         
 		var animal: String?
         
+        
 		guard let aa = animal else { return }
 	}
 }
