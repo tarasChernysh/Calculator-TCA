@@ -1,4 +1,4 @@
---allman true
+--allman false
 --indent tab
 --disable elseOnSameLine,semicolons
 --exclude Pods,Generated
