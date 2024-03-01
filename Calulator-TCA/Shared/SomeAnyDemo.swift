@@ -1,6 +1,6 @@
 //
 //  SomeAnyDemo.swift
-//  Calulator-TCA
+//  Calculator-TCA
 //
 //  Created by tchernysh on 28.02.2024.
 //

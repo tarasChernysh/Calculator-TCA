@@ -1,6 +1,6 @@
 //
 //  RootView.swift
-//  Calulator-TCA
+//  Calculator-TCA
 //
 //  Created by tchernysh on 28.11.2022.
 //

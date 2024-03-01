@@ -1,6 +1,6 @@
 //
 //  CalulatorTCAApp.swift
-//  Calulator-TCA
+//  Calculator-TCA
 //
 //  Created by tchernysh on 22.08.2022.
 //

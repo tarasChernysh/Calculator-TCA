@@ -1,11 +1,11 @@
 //
 //  CalculatorServiceTests.swift
-//  Calulator-TCATests
+//  Calculator-TCATests
 //
 //  Created by tchernysh on 29.11.2022.
 //
 
-@testable import Calulator_TCA
+@testable import Calculator_TCA
 import Foundation
 import XCTest
 

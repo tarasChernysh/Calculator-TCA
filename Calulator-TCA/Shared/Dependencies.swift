@@ -1,6 +1,6 @@
 //
 //  Dependencies.swift
-//  Calulator-TCA
+//  Calculator-TCA
 //
 //  Created by Taras Chernysh on 24.01.2024.
 //

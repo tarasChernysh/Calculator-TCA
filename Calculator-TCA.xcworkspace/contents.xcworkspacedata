@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Calulator-TCA.xcodeproj">
+      location = "group:/Users/tchernysh/education/PDP/projects/Calculator-TCA/Calculator-TCA.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -1,6 +1,6 @@
 //
 //  CalulatorTCAUITests.swift
-//  Calulator-TCAUITests
+//  Calculator-TCAUITests
 //
 //  Created by tchernysh on 22.08.2022.
 //

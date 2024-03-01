@@ -1,6 +1,6 @@
 //
 //  NumberFieldView.swift
-//  Calulator-TCA
+//  Calculator-TCA
 //
 //  Created by tchernysh on 26.09.2022.
 //

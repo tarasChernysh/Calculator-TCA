@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D76A360F28B359B000D5FA26"
-               BuildableName = "Calulator-TCA.app"
-               BlueprintName = "Calulator-TCA"
-               ReferencedContainer = "container:Calulator-TCA.xcodeproj">
+               BuildableName = "Calculator-TCA.app"
+               BlueprintName = "Calculator-TCA"
+               ReferencedContainer = "container:Calculator-TCA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D76A361F28B359B300D5FA26"
-               BuildableName = "Calulator-TCATests.xctest"
-               BlueprintName = "Calulator-TCATests"
-               ReferencedContainer = "container:Calulator-TCA.xcodeproj">
+               BuildableName = "Calculator-TCATests.xctest"
+               BlueprintName = "Calculator-TCATests"
+               ReferencedContainer = "container:Calculator-TCA.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D76A362928B359B300D5FA26"
-               BuildableName = "Calulator-TCAUITests.xctest"
-               BlueprintName = "Calulator-TCAUITests"
-               ReferencedContainer = "container:Calulator-TCA.xcodeproj">
+               BuildableName = "Calculator-TCAUITests.xctest"
+               BlueprintName = "Calculator-TCAUITests"
+               ReferencedContainer = "container:Calculator-TCA.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76A360F28B359B000D5FA26"
-            BuildableName = "Calulator-TCA.app"
-            BlueprintName = "Calulator-TCA"
-            ReferencedContainer = "container:Calulator-TCA.xcodeproj">
+            BuildableName = "Calculator-TCA.app"
+            BlueprintName = "Calculator-TCA"
+            ReferencedContainer = "container:Calculator-TCA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76A360F28B359B000D5FA26"
-            BuildableName = "Calulator-TCA.app"
-            BlueprintName = "Calulator-TCA"
-            ReferencedContainer = "container:Calulator-TCA.xcodeproj">
+            BuildableName = "Calculator-TCA.app"
+            BlueprintName = "Calculator-TCA"
+            ReferencedContainer = "container:Calculator-TCA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
