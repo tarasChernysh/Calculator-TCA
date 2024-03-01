@@ -5,7 +5,8 @@ target 'Calulator-TCA' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'SwiftFormat/CLI', '~> 0.49'
+  pod 'SwiftFormat/CLI', '~> 0.49'
+
   # Pods for Calulator-TCA
 
   target 'Calulator-TCATests' do

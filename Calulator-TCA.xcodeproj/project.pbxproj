@@ -6,6 +6,20 @@
 	objectVersion = 60;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D760A4A32B91D3200001FD41 /* Periphery */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D760A4A62B91D3200001FD41 /* Build configuration list for PBXAggregateTarget "Periphery" */;
+			buildPhases = (
+				D760A4A72B91D3930001FD41 /* Scan code */,
+			);
+			dependencies = (
+			);
+			name = Periphery;
+			productName = Periphery;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2573F8F2F802037511737304 /* Pods_Calulator_TCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1FFBD263B788859515567 /* Pods_Calulator_TCA.framework */; };
 		3A2F96D92B6195C8006B2740 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3A2F96D82B6195C8006B2740 /* ComposableArchitecture */; };
@@ -134,7 +148,6 @@
 				DE081A2FFB9EF5066621DEF4 /* Pods-Calulator-TCATests.debug.xcconfig */,
 				7A8C9A2CC136837035D9A81E /* Pods-Calulator-TCATests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -335,8 +348,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					D760A4A32B91D3200001FD41 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					D76A360F28B359B000D5FA26 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -361,7 +377,7 @@
 			mainGroup = D76A360728B359B000D5FA26;
 			packageReferences = (
 				3A2F96D72B6195C8006B2740 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "EnumIdentifiebleConformable" */,
+				3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "Calulator-TCA/Macros/EnumIdentifiebleConformable" */,
 			);
 			productRefGroup = D76A361128B359B000D5FA26 /* Products */;
 			projectDirPath = "";
@@ -370,6 +386,7 @@
 				D76A360F28B359B000D5FA26 /* Calulator-TCA */,
 				D76A361F28B359B300D5FA26 /* Calulator-TCATests */,
 				D76A362928B359B300D5FA26 /* Calulator-TCAUITests */,
+				D760A4A32B91D3200001FD41 /* Periphery */,
 			);
 		};
 /* End PBXProject section */
@@ -486,6 +503,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D760A4A72B91D3930001FD41 /* Scan code */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Scan code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nperiphery scan \n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -543,6 +578,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D760A4A42B91D3200001FD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2KL8Q3558;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D760A4A52B91D3200001FD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2KL8Q3558;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D76A363228B359B300D5FA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,6 +634,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -639,6 +695,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -668,6 +725,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Calulator-TCA/Preview Content\"";
 				DEVELOPMENT_TEAM = 9C25ZWATG7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
@@ -701,6 +759,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Calulator-TCA/Preview Content\"";
 				DEVELOPMENT_TEAM = 9C25ZWATG7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
@@ -806,6 +865,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D760A4A62B91D3200001FD41 /* Build configuration list for PBXAggregateTarget "Periphery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D760A4A42B91D3200001FD41 /* Debug */,
+				D760A4A52B91D3200001FD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D76A360B28B359B000D5FA26 /* Build configuration list for PBXProject "Calulator-TCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -845,7 +913,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "EnumIdentifiebleConformable" */ = {
+		3A702FFB2B88E4EC00C16ADE /* XCLocalSwiftPackageReference "Calulator-TCA/Macros/EnumIdentifiebleConformable" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "Calulator-TCA/Macros/EnumIdentifiebleConformable";
 		};
