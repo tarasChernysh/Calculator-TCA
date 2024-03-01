@@ -7,7 +7,7 @@ import XCTest
 	import EnumIdentifiebleConformableMacros
 
 	let testMacros: [String: Macro.Type] = [
-		"stringify": StringifyMacro.self,
+		"stringify": StringifyMacro.self
 	]
 #endif
 

@@ -30,11 +30,23 @@ final class School {
         student.prepare(for: exam)
     }
     
-    func preparing(students: [any Student]) {
+    func preparing2<S: Student>(student: S) {
+        let chapter = type(of: student).ExamToPrepare.getChapter()
+        let exam = chapter.getExam()
+        student.prepare(for: exam)
+    }
+    
+    func preparing2<S: Student>(students: [S]) {
         
         for student in students {
             preparing(student: student)
         }
     }
+    
+    func preparing(students: [any Student]) {
+        let human = Human()
+        for student in students {
+            preparing(student: student)
+        }
+    }
 }
-

@@ -16,11 +16,11 @@ let package = Package(
 		.executable(
 			name: "EnumIdentifiebleConformableClient",
 			targets: ["EnumIdentifiebleConformableClient"]
-		),
+		)
 	],
 	dependencies: [
 		// Depend on the Swift 5.9 release of SwiftSyntax
-		.package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0"),
+		.package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0")
 	],
 	targets: [
 		// Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -30,7 +30,7 @@ let package = Package(
 			name: "EnumIdentifiebleConformableMacros",
 			dependencies: [
 				.product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
-				.product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+				.product(name: "SwiftCompilerPlugin", package: "swift-syntax")
 			]
 		),
 
@@ -45,8 +45,8 @@ let package = Package(
 			name: "EnumIdentifiebleConformableTests",
 			dependencies: [
 				"EnumIdentifiebleConformableMacros",
-				.product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
+				.product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax")
 			]
-		),
+		)
 	]
 )

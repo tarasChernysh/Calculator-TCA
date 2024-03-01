@@ -1,0 +1,6 @@
+framework module Pods_Calulator_TCATests {
+  umbrella header "Pods-Calulator-TCATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

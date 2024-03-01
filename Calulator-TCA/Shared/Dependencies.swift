@@ -33,3 +33,13 @@ extension DependencyValues {
 		set { self[NumberConverterService.self] = newValue }
 	}
 }
+
+
+protocol Person {
+    func greeting(name: String)
+}
+
+struct Human: Person {
+    func greeting(name: String) {
+    }
+}

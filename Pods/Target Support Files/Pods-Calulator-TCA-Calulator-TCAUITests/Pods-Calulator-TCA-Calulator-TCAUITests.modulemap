@@ -1,0 +1,6 @@
+framework module Pods_Calulator_TCA_Calulator_TCAUITests {
+  umbrella header "Pods-Calulator-TCA-Calulator-TCAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

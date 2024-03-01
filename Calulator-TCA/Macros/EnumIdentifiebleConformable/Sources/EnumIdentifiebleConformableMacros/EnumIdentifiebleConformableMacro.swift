@@ -52,6 +52,6 @@ public struct EnumIdentifiebleConformableMacro: ExtensionMacro {
 struct EnumIdentifiebleConformablePlugin: CompilerPlugin {
 	let providingMacros: [Macro.Type] = [
 		StringifyMacro.self,
-		EnumIdentifiebleConformableMacro.self,
+		EnumIdentifiebleConformableMacro.self
 	]
 }

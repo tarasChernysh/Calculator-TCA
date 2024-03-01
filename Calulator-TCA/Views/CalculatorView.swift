@@ -19,7 +19,7 @@ struct CalculatorDomain: Reducer {
 			[.seven, .eight, .nine, .multiply],
 			[.four, .five, .six, .substract],
 			[.one, .two, .three, .add],
-			[.zero, .decimal, .equal],
+			[.zero, .decimal, .equal]
 		]
 	}
 
