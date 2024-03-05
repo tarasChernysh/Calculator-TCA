@@ -22,7 +22,7 @@ platform :ios do
     scan(
       scheme: "CalculatorTCATests",
       devices: ["iPhone SE (3rd generation)"],
-      destination: "platform=iOS Simulator,name=iPhone SE (3rd generation),OS=17.0"
+      destination: "platform=iOS Simulator,name=iPhone SE (3rd generation)"
       )
   end
 
