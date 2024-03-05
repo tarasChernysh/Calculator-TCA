@@ -43,6 +43,7 @@ final class School {
 
 	func preparing(students: [any Student]) {
 		let human = Human()
+        
 		for student in students {
 			preparing(student: student)
 		}

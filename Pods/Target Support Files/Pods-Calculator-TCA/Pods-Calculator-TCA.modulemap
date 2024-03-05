@@ -1,0 +1,6 @@
+framework module Pods_Calculator_TCA {
+  umbrella header "Pods-Calculator-TCA-umbrella.h"
+
+  export *
+  module * { export * }
+}

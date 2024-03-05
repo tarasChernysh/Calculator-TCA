@@ -5,8 +5,9 @@ target 'Calculator-TCA' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'SwiftFormat/CLI', '~> 0.49'
+#  pod 'SwiftFormat/CLI', '~> 0.49'
   pod 'SwiftLint', '~> 0.52.2'
+  pod 'Alamofire'
 
   # Pods for Calculator-TCA
 
