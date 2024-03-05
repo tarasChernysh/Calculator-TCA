@@ -20,8 +20,6 @@
 		D7E7468B2B97179600BF0608 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D7E7468A2B97179600BF0608 /* ComposableArchitecture */; };
 		D7E746982B971C1300BF0608 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746962B971C1300BF0608 /* Float+Extension.swift */; };
 		D7E746992B971C1300BF0608 /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746972B971C1300BF0608 /* NumberFormatter+Extension.swift */; };
-		D7E746A02B971C9C00BF0608 /* EnumIdentifiebleConformable in Frameworks */ = {isa = PBXBuildFile; productRef = D7E7469F2B971C9C00BF0608 /* EnumIdentifiebleConformable */; };
-		D7E746A22B971C9C00BF0608 /* EnumIdentifiebleConformableClient in Frameworks */ = {isa = PBXBuildFile; productRef = D7E746A12B971C9C00BF0608 /* EnumIdentifiebleConformableClient */; };
 		D7E746A52B971CC400BF0608 /* CalculatorButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A32B971CC400BF0608 /* CalculatorButtonType.swift */; };
 		D7E746A62B971CC400BF0608 /* CalculatorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A42B971CC400BF0608 /* CalculatorOperation.swift */; };
 		D7E746AB2B971CD500BF0608 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A72B971CD500BF0608 /* CalculatorView.swift */; };
@@ -73,7 +71,6 @@
 		D7E7467C2B97170000BF0608 /* CalculatorTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D7E746962B971C1300BF0608 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		D7E746972B971C1300BF0608 /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
-		D7E7469D2B971C8600BF0608 /* EnumIdentifiebleConformable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EnumIdentifiebleConformable; sourceTree = "<group>"; };
 		D7E746A32B971CC400BF0608 /* CalculatorButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorButtonType.swift; sourceTree = "<group>"; };
 		D7E746A42B971CC400BF0608 /* CalculatorOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorOperation.swift; sourceTree = "<group>"; };
 		D7E746A72B971CD500BF0608 /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -94,8 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E746A22B971C9C00BF0608 /* EnumIdentifiebleConformableClient in Frameworks */,
-				D7E746A02B971C9C00BF0608 /* EnumIdentifiebleConformable in Frameworks */,
 				D7E7468B2B97179600BF0608 /* ComposableArchitecture in Frameworks */,
 				344C837F3453FDD5B8E28847 /* Pods_CalculatorTCA.framework in Frameworks */,
 			);
@@ -236,7 +231,6 @@
 		D7E7469A2B971C1E00BF0608 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				D7E7469D2B971C8600BF0608 /* EnumIdentifiebleConformable */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -284,8 +278,6 @@
 			name = CalculatorTCA;
 			packageProductDependencies = (
 				D7E7468A2B97179600BF0608 /* ComposableArchitecture */,
-				D7E7469F2B971C9C00BF0608 /* EnumIdentifiebleConformable */,
-				D7E746A12B971C9C00BF0608 /* EnumIdentifiebleConformableClient */,
 			);
 			productName = CalculatorTCA;
 			productReference = D7E7465B2B9716FE00BF0608 /* CalculatorTCA.app */;
@@ -908,14 +900,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D7E746892B97179600BF0608 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		D7E7469F2B971C9C00BF0608 /* EnumIdentifiebleConformable */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = EnumIdentifiebleConformable;
-		};
-		D7E746A12B971C9C00BF0608 /* EnumIdentifiebleConformableClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = EnumIdentifiebleConformableClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
