@@ -102,15 +102,13 @@ cyclomatic_complexity:
   ignores_case_statements: true
 
 file_length:
-  warning: 1000
-  error: 1200
+    error: 1000
 
 force_cast: warning
 force_try: warning
 
 function_body_length:
-  warning: 50
-  error: 70
+    error: 50
 
 identifier_name:
   min_length: 
@@ -118,15 +116,13 @@ identifier_name:
     warning: 0
 
 line_length: 
-  warning: 200
-  error: 220
+    error: 200
 
 trailing_whitespace:
   ignores_empty_lines: true
 
 type_body_length:
-  warning: 250
-  error: 400
+    error: 250
 
 vertical_whitespace:
   max_empty_lines: 2

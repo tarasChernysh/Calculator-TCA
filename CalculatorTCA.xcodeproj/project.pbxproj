@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -364,7 +364,6 @@
 			mainGroup = D7E746522B9716FE00BF0608;
 			packageReferences = (
 				D7E746892B97179600BF0608 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				D7E7469E2B971C9C00BF0608 /* XCLocalSwiftPackageReference "CalculatorTCA/Macros/EnumIdentifiebleConformable" */,
 			);
 			productRefGroup = D7E7465C2B9716FE00BF0608 /* Products */;
 			projectDirPath = "";
@@ -892,13 +891,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		D7E7469E2B971C9C00BF0608 /* XCLocalSwiftPackageReference "CalculatorTCA/Macros/EnumIdentifiebleConformable" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = CalculatorTCA/Macros/EnumIdentifiebleConformable;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		D7E746892B97179600BF0608 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {

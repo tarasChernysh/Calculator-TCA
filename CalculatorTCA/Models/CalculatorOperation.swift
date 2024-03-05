@@ -5,11 +5,9 @@
 //  Created by tchernysh on 26.09.2022.
 //
 
-import EnumIdentifiebleConformable
 import Foundation
 
-@IdentifiableConfirmation
-enum CalculatorOperation: String {
+enum CalculatorOperation: String, Identifiable {
 	case add
 	case divide
 	case multiply
@@ -34,4 +32,8 @@ enum CalculatorOperation: String {
 			self = .unspecified
 		}
 	}
+    
+    var id: String {
+        rawValue
+    }
 }
