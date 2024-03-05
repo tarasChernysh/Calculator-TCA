@@ -12,10 +12,11 @@ jobs:
     runs-on: macos-latest
 
     steps:
+     - uses: actions/checkout@v1
      - name: Install Swift
-        uses: slashmo/install-swift@v0.2.1
+        uses: fwal/setup-swift@v1
         with:
-          version: 5.7
+          version: `5.9`
       - name: Checkout
         uses: actions/checkout@v1
       - name: Build
