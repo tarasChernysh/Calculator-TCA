@@ -23,6 +23,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Run UnitTests
 
+### ios lint_lane
+
+```sh
+[bundle exec] fastlane ios lint_lane
+```
+
+Run linting
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

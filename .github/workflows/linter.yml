@@ -1,0 +1,30 @@
+name: Swiftlint runing
+
+# Defines when the action will run.
+on:
+  push:
+    branches:
+      - feature/ci-cd
+
+jobs:
+  linting:
+    name: Swiftlint runing
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3.0
+
+    - name: Install Fastlane
+      run: |
+        bundle install
+
+    - name: Execute linting via Fastlane
+      run: |
+        fastlane lint_lane
