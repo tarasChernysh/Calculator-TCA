@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '16.0'
+platform :ios, '16.0'
 
-target 'Calculator-TCA' do
+target 'CalculatorTCA' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -11,12 +11,12 @@ target 'Calculator-TCA' do
 
   # Pods for Calculator-TCA
 
-  target 'Calculator-TCATests' do
+  target 'CalculatorTCATests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Calculator-TCAUITests' do
+  target 'CalculatorTCAUITests' do
     # Pods for testing
   end
 
