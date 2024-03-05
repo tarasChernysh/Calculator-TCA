@@ -1,6 +1,6 @@
-name: Unit Tests
 
-# Defines when the action will run.
+name: iOS Unit Tests
+
 on:
   push:
     branches:
@@ -12,15 +12,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Build
-        uses: sersoft-gmbh/xcodebuild-action@v2
-        with:
-          destination: "platform=iOS Simulator,name=iPhone SE (3rd generation)"
-          env: "platform=iOS Simulator,name=iPhone SE (3rd generation)"
-    
-    
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
@@ -36,4 +27,4 @@ jobs:
 
     - name: Execute Unit Tests via Fastlane
       run: |
-        fastlane unitTests_lane
+                fastlane unitTests_lane
