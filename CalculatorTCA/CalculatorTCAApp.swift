@@ -10,6 +10,7 @@ import SwiftUI
 
 @main
 struct CalculatorTCAApp: App {
+    
     var body: some Scene {
         WindowGroup {
             CalculatorView(
