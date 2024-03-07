@@ -27,7 +27,8 @@ jobs:
         
     - name: Install Cocoapods
       run: |
-        fastlane install cocoapods
+        sudo gem install cocoapods
+        pod install --repo-update
 
     - name: Execute Unit Tests via Fastlane
       run: |
