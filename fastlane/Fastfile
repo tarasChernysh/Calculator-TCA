@@ -20,10 +20,8 @@ platform :ios do
   lane :unitTests_lane do
 
     scan(
-      scheme: "CalculatorTCATests",
-      devices: ["iPhone SE (3rd generation)"],
-      destination: "platform=iOS Simulator,name=iPhone SE (3rd generation)"
-      )
+    scheme: "CalculatorTCATests"
+  )
   end
 
 

@@ -28,7 +28,7 @@ jobs:
     - name: Install Cocoapods
       run: |
         sudo gem install cocoapods
-        pod install --repo-update
+        pod install
 
     - name: Execute linting via Fastlane
       run: |
