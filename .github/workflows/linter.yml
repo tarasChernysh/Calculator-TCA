@@ -20,10 +20,14 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.3.0
-
+        
     - name: Install Fastlane
       run: |
         bundle install
+        
+    - name: Install Cocoapods
+      run: |
+        fastlane install cocoapods
 
     - name: Execute linting via Fastlane
       run: |
