@@ -25,7 +25,6 @@
 		D7E746AB2B971CD500BF0608 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A72B971CD500BF0608 /* CalculatorView.swift */; };
 		D7E746AC2B971CD500BF0608 /* NumberFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A82B971CD500BF0608 /* NumberFieldView.swift */; };
 		D7E746AD2B971CD500BF0608 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746A92B971CD500BF0608 /* ButtonView.swift */; };
-		D7E746AE2B971CD500BF0608 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746AA2B971CD500BF0608 /* RootView.swift */; };
 		D7E746B12B971CE900BF0608 /* SomeAnyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746AF2B971CE900BF0608 /* SomeAnyDemo.swift */; };
 		D7E746B22B971CE900BF0608 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746B02B971CE900BF0608 /* Dependencies.swift */; };
 		D7E746B52B971CFC00BF0608 /* NumberConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746B32B971CFC00BF0608 /* NumberConverterService.swift */; };
@@ -76,7 +75,6 @@
 		D7E746A72B971CD500BF0608 /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		D7E746A82B971CD500BF0608 /* NumberFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFieldView.swift; sourceTree = "<group>"; };
 		D7E746A92B971CD500BF0608 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		D7E746AA2B971CD500BF0608 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		D7E746AF2B971CE900BF0608 /* SomeAnyDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeAnyDemo.swift; sourceTree = "<group>"; };
 		D7E746B02B971CE900BF0608 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		D7E746B32B971CFC00BF0608 /* NumberConverterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberConverterService.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				D7E746A92B971CD500BF0608 /* ButtonView.swift */,
 				D7E746A72B971CD500BF0608 /* CalculatorView.swift */,
 				D7E746A82B971CD500BF0608 /* NumberFieldView.swift */,
-				D7E746AA2B971CD500BF0608 /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -509,7 +506,6 @@
 				D7E746AB2B971CD500BF0608 /* CalculatorView.swift in Sources */,
 				D7E746B12B971CE900BF0608 /* SomeAnyDemo.swift in Sources */,
 				D7E746A62B971CC400BF0608 /* CalculatorOperation.swift in Sources */,
-				D7E746AE2B971CD500BF0608 /* RootView.swift in Sources */,
 				D7E746612B9716FE00BF0608 /* ContentView.swift in Sources */,
 				D7E746982B971C1300BF0608 /* Float+Extension.swift in Sources */,
 				D7E7465F2B9716FE00BF0608 /* CalculatorTCAApp.swift in Sources */,
