@@ -1,0 +1,22 @@
+
+
+name: Check variables
+
+on:
+  push:
+    branches:
+      - feature/ci-cd
+
+jobs:
+  check:
+    name: Run checking
+    runs-on: macos-latest
+
+    steps:
+    - name: check variables
+    with: # Set the secret as an input
+      value: ${{ secrets.test_var }}
+    env: # Or as an environment variable
+      value: ${{ secrets.test_var }}
+    run: |
+        echo "$value"

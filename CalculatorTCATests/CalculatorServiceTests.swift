@@ -108,4 +108,16 @@ final class CalculatorServiceTests: XCTestCase {
 		// Then
 		XCTAssertEqual(expectedNubmer, 0)
 	}
+    
+    func testEnvironmentVariables() {
+        
+        // Given
+        let value = "some value is here"
+        
+        // When
+        let resultValue = ProcessInfo.processInfo.environment["test_var"]
+        
+        // Then
+        XCTAssertEqual(resultValue, value)
+    }
 }
