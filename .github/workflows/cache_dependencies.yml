@@ -18,15 +18,7 @@ jobs:
         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
         restore-keys: |
             ${{ runner.os }}-pods-
-            
-    - name: Cache gems
-      uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-            ${{ runner.os }}-gem-
-            
+
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
@@ -39,9 +31,16 @@ jobs:
     - name: Install Fastlane
       run: |
         bundle install
-        
+
     - name: Install Cocoapods
       run: |
         sudo gem install cocoapods
         bundle exec pod install
 
+    - name: Run tests
+      run: |
+        fastlane unitTests_lane
+
+    - name: Run linting
+      run: |
+        fastlane lint_lane
