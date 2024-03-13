@@ -1,3 +1,4 @@
+
 #!/bin/bash
 git-format-staged --formatter "swiftformat stdin --stdinpath '{}'" "*.swift"
 

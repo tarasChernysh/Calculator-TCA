@@ -18,12 +18,8 @@ default_platform(:ios)
 platform :ios do
   desc "Run UnitTests"
   lane :unitTests_lane do
-
-    scan(
-    scheme: "CalculatorTCATests"
-  )
+    scan(scheme: "CalculatorTCATests")
   end
-
 
   desc "Run linting"
   lane :lint_lane do
@@ -35,6 +31,26 @@ platform :ios do
       raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
       ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
     )
+  end
+
+  desc "Setup project with hooks and pods"
+  lane :setup_project_lane do
+
+
+    pod_script_path = File.join("..", "scripts", "pods_setup.sh")
+    if File.exist?(pod_script_path)
+      sh pod_script_path
+    else
+      UI.error("The script #{pod_script_path} doesn't exist")
+    end
+
+    hook_script_path = File.join("..", "scripts", "hook_setup.sh")
+    if File.exist?(hook_script_path)
+      sh hook_script_path
+    else
+      UI.error("The script #{hook_script_path} doesn't exist")
+    end
+
   end
 
 end
