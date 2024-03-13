@@ -20,7 +20,7 @@ jobs:
             ${{ runner.os }}-pods-
             
     - name: Cache gems
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
@@ -43,5 +43,5 @@ jobs:
     - name: Install Cocoapods
       run: |
         sudo gem install cocoapods
-        pod install
+        bundle exec pod install
 
