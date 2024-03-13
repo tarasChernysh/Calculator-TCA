@@ -17,11 +17,13 @@ jobs:
       uses: actions/checkout@v2
       
     - name: variables
+      env:
+        variable: ${{ vars.TEST_VAR_NOT_SECRET }}
       run: |
-        echo "** $test_var **"
+        echo "** $variable **"
     
     - name: check secrets
       env:
-        value: ${{ secrets.test_var }}
+        secret: ${{ secrets.test_var }}
       run: |
-        echo " - - $value - -"
+        echo " - - $secret - -"
