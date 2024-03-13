@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - feature/ci-cd
+env:
+    env_var: ${{ vars.TEST_VAR_NOT_SECRET }}
 
 jobs:
   check:
@@ -17,10 +19,8 @@ jobs:
       uses: actions/checkout@v2
       
     - name: variables
-      env:
-        variable: ${{ vars.TEST_VAR_NOT_SECRET }}
       run: |
-        echo "** $variable **"
+        echo "** $env_var **"
     
     - name: check secrets
       env:
