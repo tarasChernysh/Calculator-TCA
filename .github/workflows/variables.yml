@@ -1,5 +1,4 @@
 
-
 name: Check variables
 
 on:
@@ -12,7 +11,7 @@ env:
 jobs:
   check:
     name: Run checking
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - name: Checkout
@@ -27,3 +26,38 @@ jobs:
         secret: ${{ secrets.test_var }}
       run: |
         echo " - - $secret - -"
+        
+    - name: Cache pods
+      uses: actions/cache@v1
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+            ${{ runner.os }}-pods-
+
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3.0
+
+    - name: Install Fastlane
+      run: |
+        bundle install
+
+    - name: Install Cocoapods
+      run: |
+        sudo gem install cocoapods
+        bundle exec pod install
+
+    - name: Run tests
+      run: |
+        touch Config.xcconfig
+        xcodebuild test \
+            -project "CalculatorTCA.xcworkspace" \
+            -scheme "CalculatorTCATests" \
+            -destination "platform=iOS Simulator,name=iPhone 14" \
+            test_var=${{ secrets.test_var }} | xcpretty

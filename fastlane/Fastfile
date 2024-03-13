@@ -36,21 +36,19 @@ platform :ios do
   desc "Setup project with hooks and pods"
   lane :setup_project_lane do
 
-
     pod_script_path = File.join("..", "scripts", "pods_setup.sh")
-    if File.exist?(pod_script_path)
-      sh pod_script_path
-    else
-      UI.error("The script #{pod_script_path} doesn't exist")
-    end
+    runScript(pod_script_path)
 
     hook_script_path = File.join("..", "scripts", "hook_setup.sh")
-    if File.exist?(hook_script_path)
-      sh hook_script_path
-    else
-      UI.error("The script #{hook_script_path} doesn't exist")
-    end
+    runScript(hook_script_path)
 
   end
+end
 
+def runScript(scriptPath)
+  if File.exist?(scriptPath)
+    sh scriptPath
+  else
+    UI.error("The script #{scriptPath} doesn't exist")
+  end
 end

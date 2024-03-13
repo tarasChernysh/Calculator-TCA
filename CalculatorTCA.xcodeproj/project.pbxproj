@@ -10,6 +10,7 @@
 		1D19F323BE36FDB6387903FB /* Pods_CalculatorTCATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66C2BA39DC2C3C35221F57B /* Pods_CalculatorTCATests.framework */; };
 		32B079BF57F4BD0EC9B7D72B /* Pods_CalculatorTCA_CalculatorTCAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DF25B0BD411CC377B45165 /* Pods_CalculatorTCA_CalculatorTCAUITests.framework */; };
 		344C837F3453FDD5B8E28847 /* Pods_CalculatorTCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0960326FA30AE982868A74A /* Pods_CalculatorTCA.framework */; };
+		D7D82E452BA1F0150011AE2D /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D7D82E442BA1D7680011AE2D /* Config.xcconfig */; };
 		D7E7465F2B9716FE00BF0608 /* CalculatorTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7465E2B9716FE00BF0608 /* CalculatorTCAApp.swift */; };
 		D7E746612B9716FE00BF0608 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E746602B9716FE00BF0608 /* ContentView.swift */; };
 		D7E746632B97170000BF0608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E746622B97170000BF0608 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		77F5EE8AA7F0C622047F0A26 /* Pods-CalculatorTCA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorTCA.release.xcconfig"; path = "Target Support Files/Pods-CalculatorTCA/Pods-CalculatorTCA.release.xcconfig"; sourceTree = "<group>"; };
 		89D6F83642B14B7A5EC660C4 /* Pods-CalculatorTCA-CalculatorTCAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorTCA-CalculatorTCAUITests.release.xcconfig"; path = "Target Support Files/Pods-CalculatorTCA-CalculatorTCAUITests/Pods-CalculatorTCA-CalculatorTCAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AECA27DB67609171F8B3E33A /* Pods-CalculatorTCATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorTCATests.release.xcconfig"; path = "Target Support Files/Pods-CalculatorTCATests/Pods-CalculatorTCATests.release.xcconfig"; sourceTree = "<group>"; };
+		D7D82E442BA1D7680011AE2D /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D7E7465B2B9716FE00BF0608 /* CalculatorTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E7465E2B9716FE00BF0608 /* CalculatorTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTCAApp.swift; sourceTree = "<group>"; };
 		D7E746602B9716FE00BF0608 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				D7E746912B97199800BF0608 /* Services */,
 				D7E7465E2B9716FE00BF0608 /* CalculatorTCAApp.swift */,
 				D7E746602B9716FE00BF0608 /* ContentView.swift */,
+				D7D82E442BA1D7680011AE2D /* Config.xcconfig */,
 				D7E746622B97170000BF0608 /* Assets.xcassets */,
 				D7E746642B97170000BF0608 /* CalculatorTCA.entitlements */,
 				D7E746652B97170000BF0608 /* Preview Content */,
@@ -379,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D82E452BA1F0150011AE2D /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +755,7 @@
 		};
 		D7E746842B97170000BF0608 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54B183D27A2CB98BD61E62EA /* Pods-CalculatorTCATests.debug.xcconfig */;
+			baseConfigurationReference = D7D82E442BA1D7680011AE2D /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
