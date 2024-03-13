@@ -10,13 +10,16 @@ on:
 jobs:
   check:
     name: Run checking
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
     - name: check variables
     with: # Set the secret as an input
       value: ${{ secrets.test_var }}
     env: # Or as an environment variable
       value: ${{ secrets.test_var }}
     run: |
-        echo "$value"
+        echo " - - $value - -"
