@@ -1,32 +1,16 @@
-
-name: Check variables
+name: Cache dependencies
 
 on:
   push:
     branches:
       - feature/ci-cd
-env:
-    env_var: ${{ vars.TEST_VAR_NOT_SECRET }}
 
 jobs:
-  check:
-    name: Run checking
+  caching:
+    name: Run caching
     runs-on: macos-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    - name: variables
-      run: |
-        echo "** $env_var **"
-    
-    - name: check secrets
-      env:
-        secret: ${{ secrets.test_var }}
-      run: |
-        echo " - - $secret - -"
-        
     - name: Cache pods
       uses: actions/cache@v1
       with:
@@ -55,9 +39,8 @@ jobs:
 
     - name: Run tests
       run: |
-        touch Config.xcconfig
-        xcodebuild test \
-            -project "CalculatorTCA.xcworkspace" \
-            -scheme "CalculatorTCATests" \
-            -destination "platform=iOS Simulator,name=iPhone 14" \
-            test_var=${{ secrets.test_var }} | xcpretty
+        fastlane unitTests_lane
+
+    - name: Run linting
+      run: |
+        fastlane lint_lane
