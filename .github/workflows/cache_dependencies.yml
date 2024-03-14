@@ -47,7 +47,8 @@ jobs:
 
     - name: Install Cocoapods
       run: |
-        fastlane action cocoapods
+        fastlane pod_install_lane
+        
 
     - name: Run tests
       run: |

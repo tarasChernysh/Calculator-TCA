@@ -43,6 +43,11 @@ platform :ios do
     runScript(hook_script_path)
 
   end
+
+  desc "Pod install"
+  lane :pod_install_lane do
+    cocoapods
+  end
 end
 
 def runScript(scriptPath)

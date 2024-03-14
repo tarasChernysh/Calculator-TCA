@@ -39,6 +39,14 @@ Run linting
 
 Setup project with hooks and pods
 
+### ios pod_install_lane
+
+```sh
+[bundle exec] fastlane ios pod_install_lane
+```
+
+Pod install
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
