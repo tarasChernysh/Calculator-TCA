@@ -5,6 +5,9 @@ on:
     branches:
       - feature/ci-cd
 
+env:
+    env_var: ${{ vars.TEST_VAR_NOT_SECRET }}
+
 jobs:
   caching:
     name: Run caching
@@ -27,6 +30,16 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.3.0
+        
+    - name: Env variables print
+      run: |
+        echo "** $env_var **"
+    
+    - name: Secrets print
+      env:
+        secret: ${{ secrets.test_var }}
+      run: |
+        echo " - - $secret - -"
 
     - name: Install Fastlane
       run: |
@@ -34,8 +47,7 @@ jobs:
 
     - name: Install Cocoapods
       run: |
-        sudo gem install cocoapods
-        bundle exec pod install --repo-update
+        fastlane action cocoapods
 
     - name: Run tests
       run: |
@@ -44,3 +56,13 @@ jobs:
     - name: Run linting
       run: |
         fastlane lint_lane
+        
+    - name: Run tests with variables
+      run: |
+        touch Config.xcconfig
+        xcodebuild test \
+            -project "CalculatorTCA.xcworkspace" \
+            -scheme "CalculatorTCATests" \
+            -destination "platform=iOS Simulator,name=iPhone 14" \
+            test_var=${{ secrets.test_var }} | xcpretty
+
