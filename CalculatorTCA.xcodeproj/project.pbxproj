@@ -755,7 +755,7 @@
 		};
 		D7E746842B97170000BF0608 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7D82E442BA1D7680011AE2D /* Config.xcconfig */;
+			baseConfigurationReference = 54B183D27A2CB98BD61E62EA /* Pods-CalculatorTCATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
