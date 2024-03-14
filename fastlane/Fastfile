@@ -24,12 +24,12 @@ platform :ios do
   desc "Run linting"
   lane :lint_lane do
     swiftlint(
-      mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+      mode: :lint,
       executable: "Pods/SwiftLint/swiftlint",
-      output_file: "swiftlint.result.json", # The path of the output file (optional)
-      config_file: ".swiftlint-ci.yml",     # The path of the configuration file (optional)
-      raise_if_swiftlint_error: true,      # Allow fastlane to raise an error if swiftlint fails
-      ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+      output_file: "swiftlint.result.json",
+      config_file: ".swiftlint-ci.yml",
+      raise_if_swiftlint_error: true,
+      ignore_exit_status: true 
     )
   end
 
@@ -38,7 +38,6 @@ platform :ios do
 
     pod_script_path = File.join("..", "scripts", "pods_setup.sh")
     runScript(pod_script_path)
-
     hook_script_path = File.join("..", "scripts", "hook_setup.sh")
     runScript(hook_script_path)
 
