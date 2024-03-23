@@ -45,7 +45,15 @@ struct CalculatorService: CalculatorUseCase {
     func getPercent(from number: Double) -> Double {
         number / 100
     }
-
+    
+    /// Make additing operation
+    ///```swift
+    /// let resultNumber = self.sum(operand1: 1, operand2: 1)
+    ///
+    /// print(resultNumber) // "2"
+    ///
+    /// ```
+    
     func sum(operand1: Double, operand2: Double) -> Double {
         operand1 + operand2
     }
