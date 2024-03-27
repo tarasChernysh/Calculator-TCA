@@ -6,7 +6,7 @@ on:
        - feature/ci-cd
 
 env:
-  DEVELOPER_DIR: /Applications/Xcode_14.0.1.app/Contents/Developer
+  DEVELOPER_DIR: /Applications/Xcode.app/Contents/Developer
 
 jobs:
   Generate:
@@ -17,8 +17,8 @@ jobs:
       run: |
         xcodebuild docbuild \
           -scheme 'CalculatorTCA' \
-          -derivedDataPath ./build \
-          -destination 'platform=iOS Simulator,OS=latest,name=iPhone 13'
+          -derivedDataPath "$PWD/.derivedData" \
+          -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15'
     - name: Generate pages
       run: |
         $(xcrun --find docc) process-archive transform-for-static-hosting \
