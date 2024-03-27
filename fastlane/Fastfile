@@ -1,0 +1,58 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run UnitTests"
+  lane :unitTests_lane do
+    scan(scheme: "CalculatorTCATests")
+  end
+
+  desc "Run linting"
+  lane :lint_lane do
+    swiftlint(
+      mode: :lint,
+      executable: "Pods/SwiftLint/swiftlint",
+      output_file: "swiftlint.result.json",
+      config_file: ".swiftlint-ci.yml",
+      raise_if_swiftlint_error: true,
+      ignore_exit_status: true 
+    )
+  end
+
+  desc "Setup project with hooks and pods"
+  lane :setup_project_lane do
+
+    pod_script_path = File.join("..", "scripts", "pods_setup.sh")
+    runScript(pod_script_path)
+    hook_script_path = File.join("..", "scripts", "hook_setup.sh")
+    runScript(hook_script_path)
+
+  end
+
+  desc "Pod install"
+  lane :pod_install_lane do
+    cocoapods
+  end
+end
+
+def runScript(scriptPath)
+  if File.exist?(scriptPath)
+    sh scriptPath
+  else
+    UI.error("The script #{scriptPath} doesn't exist")
+  end
+end

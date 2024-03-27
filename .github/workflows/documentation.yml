@@ -1,0 +1,33 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+       - feature/ci-cd
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_13.4.1.app/Contents/Developer
+
+jobs:
+  Generate:
+    runs-on: macos-12.3
+    steps:
+    - uses: actions/checkout@v2
+    - name: Generate archive
+      run: |
+        xcodebuild docbuild \
+          -scheme 'CalculatorTCA' \
+          -derivedDataPath "$PWD/.derivedData" \
+          -destination 'platform=iOS Simulator,OS=latest,name=iPhone 12'
+    - name: Generate pages
+      run: |
+        $(xcrun --find docc) process-archive transform-for-static-hosting \
+          $(find ./build -type d -name '*.doccarchive') \
+          --hosting-base-path CalculatorTCA \
+          --output-path ./docs
+    - name: Deploy documentation to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        keep_files: true

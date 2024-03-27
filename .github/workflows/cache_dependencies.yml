@@ -1,0 +1,60 @@
+name: Cache dependencies
+
+on:
+  push:
+    branches:
+      - feature/ci-cd
+
+env:
+    env_var: ${{ vars.TEST_VAR_NOT_SECRET }}
+
+jobs:
+  caching:
+    name: Run caching
+    runs-on: macos-latest
+
+    steps:
+    - name: Cache pods
+      uses: actions/cache@v1
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+            ${{ runner.os }}-pods-
+
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3.0
+        
+    - name: Env variables print
+      run: |
+        echo "** $env_var **"
+    
+    - name: Secrets print
+      env:
+        secret: ${{ secrets.test_var }}
+      run: |
+        echo " - - $secret - -"
+
+    - name: Install Fastlane
+      run: |
+        bundle install
+
+    - name: Install Cocoapods
+      run: |
+        fastlane pod_install_lane
+        
+
+    - name: Run tests
+      run: |
+        fastlane unitTests_lane
+
+    - name: Run linting
+      run: |
+        fastlane lint_lane
+

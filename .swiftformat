@@ -2,3 +2,5 @@
 --indent tab
 --disable elseOnSameLine,semicolons
 --exclude Pods,Generated
+
+--rules redundantSelf
